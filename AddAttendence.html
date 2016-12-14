@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>Add Attendence</title>
+ 
+ 
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+   <link rel="stylesheet" type="text/css" href="css/custom.css">
+   <script src="javascript/AddAttendence.js"></script>
+   <link rel="script" type="text/javascript" href="javascript/javascript.js">
+   
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="main-header">
+ <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="logo">
+				<img src="images/betabulls.png" class="img-responsive"/>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<ul class="social-network social-circle">
+                        <li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/collections/featured" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+		</div>
+	</div>
+ </div>
+ </div>
+ 
+ 
+ <div class="nav-back">
+ <div class="navbar-wrapper">
+    <div class="container-fluid">
+        <nav class="navbar nav-bottom">
+            <div class="">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><!--div class="logo">
+				<img src="images/betabulls.png" class="img-responsive"/>
+				</div--></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Dashboard.html" class="">Dashboard</a></li>
+                        <li class=" dropdown">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Employees <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class=" dropdown">
+                                    <!--<a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List Employees</a>-->
+                                
+                                <li><a href="AddEmployee.html">Add Employee</a></li>
+								 <li><a href="ManageEmployees.html">Manage Employee</a></li>
+								 <li><a href="ListEmployees.html">List Of Employees </a></li>
+								 
+                            </ul>
+							</li>
+                      <!--li><a href="#">Manage Employees</a></li-->
+                        <li class=" dropdown">
+						<a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leaves <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="AddLeaves.html">Add Leaves</a></li>
+                                <li><a href="ManageLeaves.html">Manage Leaves</a></li>
+								  <li><a href="ListLeavePosition.html">List Leave Position</a></li>
+                            </ul>
+                        </li>
+                        <li class=" dropdown active">
+						<a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Time Sheet<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+							<li><a href="AddAttendence.html">Add Attendence</a></li>
+                                <li><a href="AddAttendenceSheet.html">Add AttendenceSheet</a></li>
+                                <li><a href="ManageAttendence.html">Manage Attendence</a></li>
+                                <li><a href="ListAttendence.html">List Attendence</a></li>
+                            </ul>
+                        </li>
+                        <li class=" down"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ExtraLeaves.html">Extra Leaves Taken</a></li>
+                                
+								<li><a href="ReportOnAbsentees.html">Report On Absentees</a></li>
+								<li><a href="ReportOnBelow9hrs.html">Report On Below 9Hours</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+						
+						
+                        <li class=" dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signed In As  <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ChangePassword.html">Change Password</a></li>
+                                
+								<li><a href="ProfileInFormation.html">My Profile</a></li>
+								
+								<li><a href="/VerifyValidation">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="profileicon-border"><img src="images/a.jpg" class="img-responsive profileicon"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+</div>
+<div class="container" style="min-height:430px">
+<div class="row">
+<div class="form addattendence " style="margin: 0 auto 25px; margin-top:35px;">
+<fieldset style="min-height: 280px;">
+		<legend>Add Attendence</legend>
+<form class="form-horizontal" role="form">
+  
+  <div class="form-group">
+  
+    <label class="control-label col-sm-3" for="month">Select Month <span style=color:red>*</span></label>
+    <div class="col-sm-9"> 
+     <select class="form-control" id="sel1" required>
+    <option value="">  Month  </option>
+	<option value="January">January</option>
+	<option value="Febuary">Febuary</option>
+	<option value="March">March</option>
+	<option value="April">April</option>
+	<option value="May">May</option>
+	<option value="June">June</option>
+	<option value="July">July</option>
+	<option value="August">August</option>
+	<option value="September">September</option>
+	<option value="October">October</option>
+	<option value="November">November</option>
+	<option value="December">December</option>
+  </select>
+    </div>
+	 </div>
+  
+  
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="year">Select Year <span style=color:red>*</span></label>
+    <div class="col-sm-9"> 
+      <select class="form-control" id="sel2" required>
+    <option value="">  Year  </option>
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	<option value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	<option value="2017">2017</option>
+	<option value="2018">2018</option>
+	<option value="2019">2019</option>
+	<option value="2020">2020</option>
+	 </select>
+    </div>
+  </div>
+    
+   <div class="form-group">
+    <label class="control-label col-sm-3" for="file" >Select File <span style=color:red>*</span></label>
+    <div class="col-sm-6">
+      
+ <div class="full-width">
+            <div class="file">
+                <div class="col-lg-14 col-md-14 col-sm-14">
+				
+                    <input type="file" id="uploadBox" value="selectfile" class="form-control form-input form-style-base" required>
+                    <h4 id="fake-btn" class="form-input fake-styled-btn text-center truncate"><span class="margin"> </span></h4>
+                </div>
+</div>
+        </div>
+		</div>
+		</div>
+  <div class="form-group"> 
+    <div class="col-sm-12">
+      
+	  
+	  <button type="submit" class="btn btn-primary  center-block" type="submit" onclick="validate(form)"><span class="glyphicon glyphicon-upload"></span>  Upload</button>
+</div>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+
+
+<div class="fdown">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						&#169; 2014 BetaBulls *  Privacy Policy
+					</div>
+				</div>
+			</div>
+		</div>   
+</body>
+</html>
