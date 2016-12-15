@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+<title>Registration</title>
+  
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+   <link rel="stylesheet" type="text/css" href="css/custom1.css">
+      <script src="javascript/reg.js"></script>
+   <link rel="script" type="text/javascript" href="javascript/javascript.js">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="http://www.clubdesign.at/floatlabels.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="script" type="text/javascript" href="js/javascriptexp.js">
+
+
+<div class="container-fluid">
+
+        <div class="row centered-form">
+        <div class=" col-md-6 col-md-offset-3">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h1 class="panel-title" align="center"><b>REGISTRATION FORM</b></h1>
+			 			</div>
+			 			<div class="panel-body">
+			    		<form role="form" name="myForm">
+						<div class="col-sm-10 col-md-offset-1">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<label>First Name</label>
+			                <input type="text" name="first_name" id="fname" class="form-control input-sm floatlabel" placeholder="First Name" required > 
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<label>Last Name</label>
+			    						<input type="text" name="last_name" id="lname" class="form-control input-sm" placeholder="Last Name" required>
+			    					</div>
+			    				</div>
+								<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<label>Employee-Id</label>
+			    						<input type="number" name="eid" id="eid" class="form-control input-sm" placeholder="Employee-Id" required>
+			    					</div>
+			    				</div>
+								<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<label>Date Of Birth</label>
+			    						<input type="Date" name="dob" id="dob" class="form-control input-sm" placeholder="Date Of Birth" required>
+			    					</div>
+			    				</div>
+								<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<label>Phone Number</label>
+			    						<input type="number" name="pnumber" id="pnumber" class="form-control input-sm" placeholder="Phone Number" pattern="[789][0-9]{9}" maxlength="10" required>
+			    					</div>
+			    				</div>
+			    			
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+			    			<div class="form-group">
+							<label>Email Address</label>
+			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" required>
+			    			</div>
+                              </div>
+							 
+			    			
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<label>Password</label>
+			    						<input type="password" name="password" id="password"  class="form-control input-sm" placeholder="Password" required>
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									<label>Confirm Password</label>
+			    						<input type="password" name="password_confirmation" id="confpwd" class="form-control input-sm" placeholder="Confirm Password" required>
+			    					</div>
+			    				</div>
+			    		
+							<div class="col-sm-12 form-group">
+						    <label>Gender</label>
+						        <div class="row">
+                                     <div class="col-sm-4">
+                                         <label class="radio-inline">
+                                         <input type="radio" name="gender" id="male" value="male"  required> Male
+                                         </label>
+                                     </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                <input type="radio" name="gender" id="female"value="Female" required >Female
+                                </label>
+                            </div>
+                            
+                                </div>
+						</div>
+						</div>
+						<div class="form-group">
+							<label>Address</label>
+							<textarea placeholder="Enter Address" id="address"rows="3" class="form-control" required></textarea>
+						</div> <div class="row">
+								<div class="col-sm-4 form-group">
+								   <label>City</label>
+								    <input type="text" id="city" placeholder="Enter City Name" class="form-control" required>
+							    </div>	
+							<div class="col-sm-4 form-group">
+								<label>State</label>
+								<input type="text" id="state" placeholder="Enter State Name" class="form-control" required>
+							</div>	
+							    <div class="col-sm-4 form-group">
+								    <label>Zip</label>
+								    <input type="number" id="zip" placeholder="Enter Zip Code" class="form-control"required>
+							    </div>		
+						    </div>
+		               <div class="col-md-4 col-md-offset-2">
+							<div id="submit">
+						<button type="button" class="btn btn-lg btn-info center-block" onclick="check(form)">Register</button>
+								</div>	</div>
+						<div class="col-sm-4">				
+					<div id="reset">
+					   
+					   <button type="cancel" class="btn btn-lg btn-info center-block" formnovalidate>Reset</button>
+					</div></div>
+			    		
+			    		 
+						</div>
+						</div>
+			    		</form>
+						
+	    		</div>
+    		</div>
+    
+    </div>
+	<!-- Script For This Page... ---->
+	<script>
+	var email = document.getElementById('email');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{3,3})+$/;
+	var mob = /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
+	var regex = /^[a-zA-Z]*$/;
+	 //var textbox = document.getElementById("zip");
+	
+	
+	
+	function check(form){
+	
+	
+	
+	if(form.fname.value == ""){
+	alert("Please fill first name");
+	$("#fname").focus();
+	return false;
+	
+	}
+	else if (regex.test(fname.value) == false){
+	alert("Please fill with alphabets");
+	$("#fname").focus();
+	return false;
+	}
+	else if(form.lname.value == ""){
+	alert("Please fill last name");
+	$("#lname").focus();
+	return false;
+	}
+	else if (regex.test(lname.value) == false){
+	alert("Please fill with alphabets");
+	$("#lname").focus();
+	return false;
+	}
+	else if(form.eid.value == ""){
+	alert("Please fill employee id");
+	$("#eid").focus();
+	return false;
+	}
+	else if(form.dob.value == ""){
+	alert("Please select date of birth");
+	$("#dob").focus();
+	    return false;
+
+	}
+	else if(form.pnumber.value == ""){
+	alert("Please fill mobile number");
+	$("#pnumber").focus();
+	return false;
+	}
+	else if(form.pnumber.value.length != "10"){
+	alert("Make sure the Phone number must Be 10 characters long");
+	$("#pnumber").focus();
+	return false;
+	}
+	else if (mob.test(pnumber.value) == false){
+	alert("Please fill valid mobile number ");
+	$("#pnumber").focus();
+	return false;
+	}
+	else if(form.email.value == ""){
+	alert("Please fill e-mail adress");
+	$("#email").focus();
+	return false;
+	 }
+	else if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+    $("#email").focus();
+    return false;
+	}
+	else if(form.password.value == ""){
+	alert("Please fill password");
+	$("#password").focus();
+	return false;
+	}
+	else if(form.confpwd.value == ""){
+	alert("Please fill confirm password");
+	$("#confpwd").focus();
+	return false;
+	}
+	else if(form.confpwd.value != form.password.value ){
+	alert("Password and confirm password must be same");
+	$("#confpwd").focus();
+	return false;
+	}
+	
+	else if ((form.gender[0].checked == false)&& (form.gender[1].checked == false) ){
+	alert("Please select either male or female");
+	
+	return false;
+	}
+	
+	else if(form.address.value == ""){
+	alert("Please fill address");
+	$("#address").focus();
+	return false;
+	}
+	else if(form.city.value == ""){
+	alert("Please fill city name");
+	$("#city").focus();
+	return false;
+	}
+	else if(form.state.value == ""){
+	alert("Please fill state name");
+	$("#state").focus();
+	return false;
+	}
+	else if(form.zip.value == ""){
+	alert("Please fill zip code");
+	$("#zip").focus();
+	return false;
+	}
+	
+	else if(form.zip.value.length != "6"){
+	alert("Make sure the zip code must be 6 characters long");
+	$("#zip").focus();
+	return false;
+	}
+	else{
+	
+	alert("Your registration is sucessfully completed");
+	window.location.reload();
+	window.open('/VerifyValidation');
+	return true;
+	}
+	
+	}
+	</script>
+	<body>
+	</html>
