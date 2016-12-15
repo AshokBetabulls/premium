@@ -15,7 +15,7 @@
  return false;
  }
  else if (letterNumber.test(form.name.value) != true){
-	alert("Please fill with alphabets");
+	alert("Please fill with alphanumerics");
 	$("#name").focus();
 	return false;
 	}
