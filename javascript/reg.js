@@ -2,7 +2,7 @@
 	var email = document.getElementById('email');
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{3,3})+$/;
 	var mob = /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
-	var regex = /^[a-zA-Z]*$/;
+	var regex = /^[0-9a-zA-Z]+$/; 
 	 //var textbox = document.getElementById("zip");
 	
 	
@@ -18,7 +18,7 @@
 	
 	}
 	else if (regex.test(fname.value) == false){
-	alert("Please fill with alphabets");
+	alert("Please fill with alphanumeric");
 	$("#fname").focus();
 	return false;
 	}
@@ -28,7 +28,7 @@
 	return false;
 	}
 	else if (regex.test(lname.value) == false){
-	alert("Please fill with alphabets");
+	alert("Please fill with alphanumerics");
 	$("#lname").focus();
 	return false;
 	}
@@ -48,22 +48,23 @@
 	$("#pnumber").focus();
 	return false;
 	}
-	else if(form.pnumber.value.length != "10"){
-	alert("Make sure the Phone number must Be 10 characters long");
-	$("#pnumber").focus();
-	return false;
-	}
 	else if (mob.test(pnumber.value) == false){
 	alert("Please fill valid mobile number ");
 	$("#pnumber").focus();
 	return false;
 	}
+	else if(form.pnumber.value.length != "10"){
+	alert("Make sure the Phone number must Be 10 characters long");
+	$("#pnumber").focus();
+	return false;
+	}
+	
 	else if(form.email.value == ""){
 	alert("Please fill e-mail adress");
 	$("#email").focus();
 	return false;
 	 }
-	else if (!filter.test(email.value)) {
+	else if (!filter.test(form.email.value)) {
     alert('Please provide a valid email address');
     $("#email").focus();
     return false;
@@ -86,7 +87,7 @@
 	
 	else if ((form.gender[0].checked == false)&& (form.gender[1].checked == false) ){
 	alert("Please select either male or female");
-	
+	$("#male").focus();
 	return false;
 	}
 	
@@ -113,7 +114,7 @@
 	
 	else if(form.zip.value.length != "6"){
 	alert("Make sure the zip code must be 6 characters long");
-	$("#zip").focus();
+	document.getElementById('zip').focus();
 	return false;
 	}
 	else{
@@ -125,3 +126,4 @@
 	}
 	
 	}
+	
