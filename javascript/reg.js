@@ -121,7 +121,7 @@
 	
 	alert("Your registration is sucessfully completed");
 	window.location.reload();
-	window.open('/VerifyValidation');
+	window.open('/premium');
 	return true;
 	}
 	
